@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label=<node &#35;0<br/>petal length &le; 2.45<br/>samples = 105<br/>value = [33, 36, 36]<br/>class = Iris-versicolor>, fillcolor="#39e58100"] ;
+1 [label=<node &#35;1<br/>samples = 33<br/>value = [33, 0, 0]<br/>class = Iris-setosa>, fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<node &#35;2<br/>petal length &le; 4.75<br/>samples = 72<br/>value = [0, 36, 36]<br/>class = Iris-versicolor>, fillcolor="#39e58100"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<node &#35;3<br/>sepal length &le; 4.95<br/>samples = 34<br/>value = [0, 33, 1]<br/>class = Iris-versicolor>, fillcolor="#39e581f7"] ;
+2 -> 3 ;
+4 [label=<node &#35;4<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = Iris-virginica>, fillcolor="#8139e5ff"] ;
+3 -> 4 ;
+5 [label=<node &#35;5<br/>samples = 33<br/>value = [0, 33, 0]<br/>class = Iris-versicolor>, fillcolor="#39e581ff"] ;
+3 -> 5 ;
+6 [label=<node &#35;6<br/>petal length &le; 4.95<br/>samples = 38<br/>value = [0, 3, 35]<br/>class = Iris-virginica>, fillcolor="#8139e5e9"] ;
+2 -> 6 ;
+7 [label=<node &#35;7<br/>sepal width &le; 3.05<br/>samples = 5<br/>value = [0, 2, 3]<br/>class = Iris-virginica>, fillcolor="#8139e555"] ;
+6 -> 7 ;
+8 [label=<node &#35;8<br/>samples = 3<br/>value = [0, 0, 3]<br/>class = Iris-virginica>, fillcolor="#8139e5ff"] ;
+7 -> 8 ;
+9 [label=<node &#35;9<br/>samples = 2<br/>value = [0, 2, 0]<br/>class = Iris-versicolor>, fillcolor="#39e581ff"] ;
+7 -> 9 ;
+10 [label=<node &#35;10<br/>petal width &le; 1.7<br/>samples = 33<br/>value = [0, 1, 32]<br/>class = Iris-virginica>, fillcolor="#8139e5f7"] ;
+6 -> 10 ;
+11 [label=<node &#35;11<br/>sepal length &le; 6.15<br/>samples = 4<br/>value = [0, 1, 3]<br/>class = Iris-virginica>, fillcolor="#8139e5aa"] ;
+10 -> 11 ;
+12 [label=<node &#35;12<br/>petal length &le; 5.05<br/>samples = 2<br/>value = [0, 1, 1]<br/>class = Iris-versicolor>, fillcolor="#39e58100"] ;
+11 -> 12 ;
+13 [label=<node &#35;13<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = Iris-virginica>, fillcolor="#8139e5ff"] ;
+12 -> 13 ;
+14 [label=<node &#35;14<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = Iris-versicolor>, fillcolor="#39e581ff"] ;
+12 -> 14 ;
+15 [label=<node &#35;15<br/>samples = 2<br/>value = [0, 0, 2]<br/>class = Iris-virginica>, fillcolor="#8139e5ff"] ;
+11 -> 15 ;
+16 [label=<node &#35;16<br/>samples = 29<br/>value = [0, 0, 29]<br/>class = Iris-virginica>, fillcolor="#8139e5ff"] ;
+10 -> 16 ;
+}
